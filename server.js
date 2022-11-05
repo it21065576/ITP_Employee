@@ -11,7 +11,7 @@ const postRoutes = require('./routes/posts');
 //...........................................OwnerManagment................................................. 
 const employeeRoutes = require('./routes/employees');
 //...........................................OwnerManagmentEnd...............................................
-
+const InventoryRoutes = require('./routes/inventorys');
 
 //app middleware
 app.use(bodyParser.json());
@@ -26,7 +26,7 @@ app.use(postRoutes);
 //...........................................OwnerManagment................................................. 
 app.use(employeeRoutes);
 //...........................................OwnerManagmentEnd...............................................
-
+app.use(InventoryRoutes);
 
 const PORT = 8000;
 const DB_URL = 'mongodb+srv://Thisara:Tk9adrRD56Rztt0A@cluster0.lvbwpqz.mongodb.net/factory_DB?retryWrites=true&w=majority'

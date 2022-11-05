@@ -28,7 +28,7 @@ export default class OwnerReport extends Component {
       }
     });
   }
-
+ 
   onDelete = (id) => {
     axios.delete(`/employee/delete/${id}`).then((res) => {
       alert("Deleted Successfully");
